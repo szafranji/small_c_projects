@@ -22,6 +22,7 @@ void _ls(const char *dir_name) {
 
 
 int main(int args, char** argv) {
-    _ls(argv[1]);
+    if(args == 1) _ls(".");
+    else _ls(argv[1]);
     return 0;
 }
